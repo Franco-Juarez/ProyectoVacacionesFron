@@ -1,0 +1,28 @@
+h1 {
+  background-color: aquamarine;
+  color: black;
+  border: 2px solid red;
+}
+
+.diferente {
+  background-color: tomato;
+  color: blanchedalmond;
+  border: 2px solid blue;
+}
+
+body {
+  background-color: azure;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 10px;
+}
