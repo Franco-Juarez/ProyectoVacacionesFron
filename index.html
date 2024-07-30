@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Equipo de Front-End">
   <title>Proyecto de Verano</title>
+  <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
   <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
@@ -12,18 +13,18 @@
   <header class="header">
     <div class="glass-bg">
       <a class="linkHover" href="index.html">
-        <img src="./assets/logo.svg"/>
+        KODE
       </a>
       <nav class="navbar">
         <ul class="flexboxUl">
           <li>
-            <a href="./index.html">Carrito </a>
+            <a href="#team-section">Nuestro equipo</a>
           </li>
           <li>
-            <a href="./index.html">Cuenta</a>
+            <a href="#our-work-section">Nuestro trabajo</a>
           </li>
           <li>
-            <a href="./index.html">Cerrar sesión</a>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
         <img class="hamburger-btn" src="./assets/hamburger.svg" />
@@ -38,7 +39,8 @@
       <p>We are available for your awesome projects! </p>
       <button class="button-6">CONTACT US</button>
      </section>
-     <section class="team-section">
+     <!-- TEAM SECTION -->
+     <section id="team-section" class="team-section">
         <header>
           <h4>TEAM</h4>
           <h2>Build the<br> future together</h2>
@@ -59,17 +61,38 @@
             <h3>Fulano Perez</h3>
             <p class="team-tag">FRONT-END DEVELOPER</p>
           </div>
+          <div class="team-card">
+            <img src="./assets/img3.jpg" />
+            <h3>Fulano Perez</h3>
+            <p class="team-tag">FRONT-END DEVELOPER</p>
+          </div>
+          <div class="team-card">
+            <img src="./assets/img3.jpg" />
+            <h3>Fulano Perez</h3>
+            <p class="team-tag">FRONT-END DEVELOPER</p>
+          </div>
+          <div class="team-card">
+            <img src="./assets/img3.jpg" />
+            <h3>Fulano Perez</h3>
+            <p class="team-tag">FRONT-END DEVELOPER</p>
+          </div>
         </div>
     </section>
-    <section class="portfolio-section">
+    <!-- NUESTROS TRABAJOS -->
+    <section id="our-work-section" class="portfolio-section">
       <h2>NUESTROS TRABAJOS</h2>
     </section>
-    <section class="contact-section">
+
+    <!-- TRABAJÁ CON NOSOTROS -->
+    <section id="contact" class="contact-section">
       <h2>TRABAJÁ CON NOSOTROS</h2>
+      <p>¿Preguntas o consultas? No dudes en escribirnos</p>
       <form>
         FORMULARIO
       </form>
     </section>
+
+    <!-- FOOTER -->
     <footer>
       <a>+54 291 5 116477</a>
       <a>MAIL</a>
