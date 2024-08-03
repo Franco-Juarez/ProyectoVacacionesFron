@@ -100,9 +100,10 @@ body {
   padding: 40px;
 }
 
-.team-section h4 {
+.heading-h4 {
   color: var(--violet);
   font-size: 26px;
+  text-transform: uppercase;
 }
 
 .team-section h3 {
@@ -141,7 +142,8 @@ body {
   padding-bottom: 40px;
 }
 
-.team-section h2 {
+
+.heading-style {
   font-weight: 600;
   font-size: 80px;
   color: var(--white);
@@ -191,6 +193,182 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   
+}
+
+
+/* ESTILOS DE MASONRY --------------------------------------------------------*/
+
+.portfolio-section {
+  padding: 40px;
+}
+
+.masonry-container{
+  display: flex;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px;
+
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  z-index: -1;
+  border-radius: 20px;
+}
+
+/* FIN MASONRY --------------------------------------------------------*/
+
+
+/*FOOTER*/
+.pie {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 93%;
+  align-items: center;
+}
+
+.pie hr {
+  margin: 0;
+  border: none;
+  border-top: 1px solid var(--white);
+  width: 100%;  
+  padding: 10px;  
+}
+
+.face {
+  width: 41px;
+  background-color:  var(--violet);
+  padding: 3px;
+  border-radius: 50px;
+}
+
+.git {
+  width: 40px;
+  background-color: var(--violet);
+  padding: 3px;
+  border-radius: 50px;
+}
+
+.insta, .linked, .twit {
+  width: 36.5px;
+  background-color: var(--violet);
+  padding: 3px;
+  border-radius: 50px;  
+}
+
+.contacto {
+color: var(--white);
+font-size: 12px;
+padding-bottom: 20px;
+}
+
+.contacto h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.contacto h4 {
+  color: var(--violet);
+  font-size: 15px;
+}
+
+/*REDES BUTTONS (lo internetié)*/
+.redes img {
+  cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+  transition: transform 0.3s ease; /* Suaviza la animación */
+  &:hover {
+      transform: scale(1.1); /* Agranda la imagen un poco */
+      background-color: var(--white); /*esto es míoooo y funcionó*/
+  }
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.derechos {
+  color: var(--white);
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.plataformas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.plataformas1 {
+  display: flex;
+  align-items: flex-start;
+  color: var(--white);
+  font-size: 15px;
+}
+
+.plataformasLogos {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.plataformas2 {
+  display: flex;
+  align-items: center;/*de acá hasta el padding lo robé de Fran*/
+  background-color: transparent; /*es el bordeado de oblea*/
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  color: var(--white);
+  display:inline-flex;
+  padding: 1px 5px;
+}
+
+/*no sabía como invertir el color de la imagen a blanco ---> chatgpt*/
+.plataformas2 img {
+  width: 20px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+}
+
+.plataformas2 p {
+  margin: 0;
+  color: var(--white);
+  font-size: 15px;
 }
 
 
@@ -298,6 +476,7 @@ h1, h2, h3, h4, h5, h6 {
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
+  max-width: 200px;
 }
 
 .button-6:hover,
