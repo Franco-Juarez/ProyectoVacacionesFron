@@ -576,3 +576,65 @@ padding-bottom: 20px;
   -webkit-transform: scale(1.1);
   transform: scale(1.03);
 }
+
+.form-section {
+  display: flex;
+}
+
+input{
+  background-color: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: white; /* Para que el texto sea visible */
+  padding: 10px;
+  border-radius: 4px; /* Opcional: para bordes redondeados */
+  transition: border-color 0.4s, box-shadow 0.4s; /* Para transiciones suaves */
+}
+
+textarea {
+  background-color: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: white; /* Para que el texto sea visible */
+  padding: 10px;
+  border-radius: 4px; /* Opcional: para bordes redondeados */
+  transition: border-color 0.4s, box-shadow 0.4s; /* Para transiciones suaves */
+}
+
+textarea:hover {
+  border-color: #ffffff; /* Color del borde al hacer hover */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Sombra al hacer hover */
+}
+
+input:hover {
+  border-color: #ffffff; /* Color del borde al hacer hover */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Sombra al hacer hover */
+}
+
+.input-container::before,
+.input-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  
+  transition: 0.4s;
+}
+
+.input-container::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-container::after {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-container:hover::before {
+  left: 0;
+}
+
+.input-container:hover::after {
+  left: 0;
+}
