@@ -227,9 +227,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ESTILOS DEL FORM */
 
-form {
+#form {
   color: var(--white);
-  padding: 40px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -242,7 +241,9 @@ form button {
 .form-section {
   display: flex;
   justify-content: space-between;
-  max-width: 1140px;
+  gap: 20px;
+  min-width: 900px;
+  margin: 0 auto;
 }
 
 .contact-section {
@@ -250,6 +251,17 @@ form button {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  min-width: 100%;
+  padding: 40px;
+}
+
+.contact-section .heading-style {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.contact-section h2 {
+  padding-top: 0;
 }
 
 .contact-section p {
@@ -577,10 +589,6 @@ padding-bottom: 20px;
   transform: scale(1.03);
 }
 
-.form-section {
-  display: flex;
-}
-
 input{
   background-color: #0a0a0a;
   border: 1px solid rgba(255, 255, 255, 0.26);
@@ -637,4 +645,27 @@ input:hover {
 
 .input-container:hover::after {
   left: 0;
+}
+
+input, textarea {
+  min-width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+textarea {
+  font-family: var(--font-family);
+}
+
+form {
+   padding-top: 20px;
+}
+
+form .button-6 {
+  max-height: 2rem;
+  min-height: 2.5rem;
 }
