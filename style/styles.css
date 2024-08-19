@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hamburger-btn, .close-btn {
-  width: 40px;
+  width: 20px;
   display: none;
 }
 
@@ -367,6 +367,11 @@ padding-bottom: 20px;
   font-size: 15px;
 }
 
+.contacto a {
+  color: var(--white);
+  text-decoration: none;
+}
+
 /*REDES BUTTONS (lo internetié)*/
 .redes img {
   cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
@@ -375,6 +380,7 @@ padding-bottom: 20px;
       transform: scale(1.1); /* Agranda la imagen un poco */
       background-color: var(--white); /*esto es míoooo y funcionó*/
   }
+  max-width: 60px;
 }
 
 .redes {
@@ -443,6 +449,12 @@ padding-bottom: 20px;
   font-size: 15px;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
 
 /* ESTILOS PARA CELULAR  */
 
@@ -467,12 +479,16 @@ padding-bottom: 20px;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    background-color: var(--blue);
     top: 80px;
     right: 0;
-    padding-right: 20px;
-    padding-left: 20%;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40%;
     min-height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
   }
 
   .navbar .flexboxUl a {
@@ -480,6 +496,69 @@ padding-bottom: 20px;
     font-size: 16px;
     font-weight: 700;
   }
+
+  .form-section {
+    flex-direction: column;
+    max-width: 320px;
+    min-width: 0;
+  }
+
+  iframe {
+    max-width: 320px;
+  }
+
+  .team-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .plataformasLogos {
+    flex-direction: column;
+  }
+
+  .heading-style {
+    font-size: 40px;
+  }
+  .contact-section, .team-section {
+    padding: 20px;
+  }
+
+  .team-section header {
+    padding-bottom: 20px;
+  }
+  .team-cards-container {
+    padding-bottom: 20px;
+  }
+  .hero-section p {
+    text-align: center;
+  }
+
+  .form-section {
+    flex-direction: column;
+    
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .pie {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto h4, .contacto a {
+    text-align: center;
+  }
+
+.masonry-container {
+  flex-direction: column;
+}
+
 }
 
 /* ESTILOS PARA TABLET */
@@ -505,10 +584,10 @@ padding-bottom: 20px;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    background-color: var(--blue);
-    top: 80px;
+    top: 0;
+    padding-top: 20px;
     right: 0;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-left: 20%;
     min-height: 100vh;
   }
@@ -649,12 +728,6 @@ input:hover {
 
 input, textarea {
   min-width: 100%;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
 }
 
 textarea {
